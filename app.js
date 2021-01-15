@@ -8,7 +8,7 @@ const config = {
     summary: "summary.html"
   }
 }
-const dir = '/templates/';
+const dir = 'templates/';
 
 const onEdit = (content, template) => {
   preview = compile(content, template);
