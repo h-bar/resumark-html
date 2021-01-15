@@ -1,0 +1,89 @@
+/*!
+ * Template Name: DevResume - Bootstrap 4 Resume/CV Template for Software Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/*************************** Theme Colours****************************/
+/*************************** Variables Section. *****************************/
+@page {
+  size: letter;
+}
+/*************************** DevResume Styles ****************************/
+html {
+  width: 8.5in;
+  font-size: 12pt;
+}
+
+/*********** Theme Generic **********/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;;
+  /* font-family: "Times New Roman", Times, serif; */
+}
+
+/**********Unset Markdown Defaults *****/
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+/*********** Resume **********/
+
+.content-wrapper {
+  margin: 0.5in 0.7in;
+}
+
+.resume-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.resume-tagline {
+  font-size: 1.25rem;
+}
+
+a.resume-link {
+  color: #000000;
+}
+a.resume-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a.resume-link:link {
+  text-decoration: none;
+}
+a.resume-link:visited {
+  text-decoration: none;
+}
+a.resume-link:active {
+  text-decoration: none;
+}
+
+.resume-section-heading {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.item-title {
+  font-weight: bold;
+}

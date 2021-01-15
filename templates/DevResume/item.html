@@ -1,0 +1,15 @@
+<div class="item">
+  <div class="item-heading d-flex flex-row justify-content-between align-items-center">
+    <div class="item-title align-self-baseline">{{ title }}</div>
+    <div class="item-meta text-left text-md-right align-self-baseline">{{ side_note1 }}</div>
+  </div>
+  <div class="item-heading d-flex flex-row justify-content-between align-items-center">
+    <div class="item-meta align-self-baseline">{{ subtitle }}</div>
+    <div class="item-meta text-left text-md-right align-self-baseline">{{ side_note2 }}</div>
+  </div>
+  <div class="item-content">
+    {{#each content}}
+      <div>{{ markdown this }}</div>
+    {{/each}}
+  </div>
+</div>

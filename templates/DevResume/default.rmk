@@ -1,0 +1,55 @@
+### header
+.name Your Name
+.phone Phone
+.email Email
+.linkedin LinkedIn
+.github gihub
+.website website
+
+
+### section
+.title education
+
+### item
+.title Undergraduate School Name
+.subtitle Degree in Major
+.side_note1 Dates
+.side_note2 GPA
+
+
+### section
+.title Experience
+
+### item
+.title Position
+.subtitle Company
+.side_note1 Dates
+.side_note2 Some notes
+.content 
+- I did A
+- I did B
+
+
+
+### section
+.title Projects
+
+### item
+.title Project Name
+.side_note1 Dates
+.content 
+- I did A
+- I did B
+
+
+
+### section
+.title Skills
+
+### item
+.title Software
+.subtitle C/C++, Javascript, Dartlang
+
+### item
+.title Hardware
+.subtitle C/C++, Javascript, Dartlang

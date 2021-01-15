@@ -1,0 +1,26 @@
+<div class="resume-header pb-0.5">
+  <div class="d-flex flex-row justify-content-between align-items-end">
+    <h2 class="resume-name mb-0 text-uppercase">{{ name.[0] }}</h2>
+    <div class="resume-contact">
+      {{#each phone}}
+        <a class="mb-0"><i class="fas fa-phone-square  fa-fw fa-lg"></i><a class="resume-link" href="tel:{{ this }}">{{ this }}</a></a>
+      {{/each}}
+      {{#each email}}
+      <a class="mb-0"><i class="fas fa-envelope-square  fa-fw fa-lg"></i><a class="resume-link" href="mailto:{{ this }}">{{ this }}</a></a>
+      {{/each}}
+      {{#each location}}
+        <a class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg"></i>{{ this }}</a>
+      {{/each}}
+      {{#each website}}
+        <a class="mb-2"><i class="fas fa-globe fa-fw fa-lg"></i><a class="resume-link" href="https://{{ this }}">{{ this }}</a></a>
+      {{/each}}
+      {{#each github}}
+        <a class="mb-2"><i class="fab fa-github-square fa-fw fa-lg"></i><a class="resume-link" href="https:///github.com/{{ this }}">{{ this }}</a></a>
+        {{/each}}
+      {{#each linkedin}}
+        <a class="mb-2"><i class="fab fa-linkedin fa-fw fa-lg"></i><a class="resume-link" href="https://linkedin.com/in/{{ this }}">{{ this }}</a></a>
+      {{/each}}
+    </div>
+  </div>
+  <div class="resume-tagline mb-md-0">{{ tagline.[0] }}</div>
+</div>
