@@ -33,7 +33,7 @@ function compile(content, template) {
     var sections = content.split(identifier).map((section) => section.trim());
     
     var rendered = template.head({
-      css_link: ['/templates/DevResume/DevResume.css']
+      css_link: ['templates/DevResume/DevResume.css']
     });
     // console.log(rendered)
     rendered += '<div class=content-wrapper>';
