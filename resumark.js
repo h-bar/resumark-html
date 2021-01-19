@@ -2,6 +2,11 @@ Handlebars.registerHelper("markdown", function(text) {
   return new Handlebars.SafeString(marked(text));
 });
 
+var asciidoctor = Asciidoctor()
+Handlebars.registerHelper("asciidoc", function(text) {
+  return new Handlebars.SafeString(asciidoctor.convert(text));
+});
+
 function parse(text, identifier, delimiter) {
     text = '\n' + text;
     var lines = text.split(identifier).map((line) => line.trim());
@@ -21,11 +26,11 @@ function parse(text, identifier, delimiter) {
       }
       tokenized[token].push(content);
     });
-  
+    console.log(tokenized)
     return tokenized;
 }
 
-function compile(content, template) {
+function compile(content, template, config) {
     if (!template.head) return '';
   
     var identifier = '###';
@@ -33,9 +38,9 @@ function compile(content, template) {
     var sections = content.split(identifier).map((section) => section.trim());
     
     var rendered = template.head({
-      css_link: ['templates/DevResume/DevResume.css']
+      css_link: ['templates/' + config.name + '/' + config.name + '.css']
     });
-    // console.log(rendered)
+
     rendered += '<div class=content-wrapper>';
   
     sections.forEach((section) => {
